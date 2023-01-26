@@ -2,17 +2,41 @@ body {
     background-color: darkgrey;
     margin:0;
     padding:0;
+    color: white;
+}
+
+header {
+    background-color:rgb(10, 69, 69) ;
+    color: white;
+}
+
+/* The a stands for anchor and is the html tag for a link */
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: rgb(10, 30, 30);
 }
 
 .row {
     background-color: white;
     width: 88%;
+    /* relook into line below after finishing. this has physically corrected the issue but not corrcetly.  */
+    height: 25rem;
     margin:0 auto;
     padding:0px 20px;
 }
 
 .full_row {
-    background-color:darkgreen;
+    background-color: rgb(10, 69, 69);
     width: 100%
-    
+}
+
+.main_text {
+    width: 88%;
+    margin:0 auto;
+    padding:35px 20px;
+    font-size: 1.125rem;
 }
