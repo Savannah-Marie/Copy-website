@@ -1,5 +1,5 @@
 body {
-    background-color: darkgrey;
+    background-color: #ccc;
     margin:0;
     padding:0;
     color: white;
@@ -8,25 +8,53 @@ body {
 header {
     background-color:rgb(10, 69, 69) ;
     color: white;
+    margin:0 auto;
+    padding:35px 0px; 
+}
+/* for html tags there is no punctuation. when creating styling for a class use '.' at the beginning, 
+and when creating styling for an id use '#' at the beginning */
+#logo {
+    border: 2px white solid;
+    border-radius: 100%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+header nav {
+    display: inline;
+    float: right;
+    margin-right: 1rem;
+}
+
+header nav a {
+    /* margin-right: 1rem; */
+    padding: 1rem 0.5rem;
 }
 
 /* The a stands for anchor and is the html tag for a link */
 header a {
     color: white;
     text-decoration: none;
+    /* margin:0 auto;
+    padding:30px 0px; */
+
 }
 
 header a:hover {
     background-color: rgb(10, 30, 30);
 }
 
+#logo:hover {
+    background-color: rgb(10, 30, 30);
+}
+
 .row {
     background-color: white;
-    width: 88%;
+    width: 80%;
     /* relook into line below after finishing. this has physically corrected the issue but not corrcetly.  */
     height: 25rem;
     margin:0 auto;
-    padding:0px 20px;
+    padding:0px 30px;
 }
 
 .full_row {
