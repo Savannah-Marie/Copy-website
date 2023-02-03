@@ -42,17 +42,40 @@ header a {
 
 header a:hover {
     background-color: rgb(10, 30, 30);
+    transition-duration: 2s;
 }
+
+/* The below is to handle the navigation dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
 
 #logo:hover {
     background-color: rgb(10, 30, 30);
 }
 
+.dropdown-content a {
+    background-color: white;
+    color: black;
+    display: block;
+}
+
 .row {
     background-color: white;
+    color: black;
     width: 80%;
-    /* relook into line below after finishing. this has physically corrected the issue but not corrcetly.  */
-    height: 25rem;
+    /* remember at the end to try and fix the annoying white strip  */
     margin:0 auto;
     padding:0px 30px;
 }
@@ -63,8 +86,21 @@ header a:hover {
 }
 
 .main_text {
-    width: 88%;
+    width: 80%;
     margin:0 auto;
-    padding:35px 20px;
+    padding:35px 40px;
     font-size: 1.125rem;
+}
+
+.imageblock {
+    margin: 10px;
+    width: calc(25% - 20px);
+}
+
+.blockimage img {
+    width: 100%;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
 }
