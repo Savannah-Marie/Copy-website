@@ -78,11 +78,21 @@ header a:hover {
     /* remember at the end to try and fix the annoying white strip  */
     margin:0 auto;
     padding:0px 30px;
+    /* padding-bottom: 10px; */
+    display:block
+}
+.row-bottom {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cover-image {
+    display: block;
 }
 
 .full_row {
     background-color: rgb(10, 69, 69);
-    width: 100%
+    width: 100%;
 }
 
 .main_text {
@@ -99,8 +109,25 @@ header a:hover {
 
 .blockimage img {
     width: 100%;
+    display:block;
 }
 .images {
     display: flex;
     flex-wrap: wrap;
 }
+
+.blocktext {
+    background-color: rgb(10, 69, 69);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    display:block;
+}
+
+footer {
+        background-color: rgb(10, 69, 69);
+        color: white;
+        text-align: center;
+        padding: 10px 0px;
+    }
